@@ -1,0 +1,8 @@
+<launch>
+
+  <!--value值确定频率-->
+  <param name="/freq" type="double" value="1000"></param>
+  <node pkg="ros_franka" type="Frequency_Control" name="FrankaFrequency" output="screen"/>
+  <node pkg="ros_franka" type="CartPos_Control" name="CartPos_Control" output="screen"/>
+
+</launch>
